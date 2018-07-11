@@ -1,4 +1,4 @@
-package com.customers.dao.impl;
+package com.customers.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -8,7 +8,7 @@ import com.vaadin.spring.annotation.UIScope;
 
 @UIScope
 @SpringComponent
-public class VaadinService {
+public class PersistenceVaadinService {
 
 	@Autowired
 	private CustomerDao customerDao;

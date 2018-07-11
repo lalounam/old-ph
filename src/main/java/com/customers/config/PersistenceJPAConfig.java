@@ -18,9 +18,12 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.vaadin.spring.annotation.EnableVaadin;
+
+@EnableVaadin
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("com.customers.dao.impl")
+@ComponentScan("com.customers")
 @EnableJpaRepositories("com.customers.entity.repository")
 public class PersistenceJPAConfig {
 
