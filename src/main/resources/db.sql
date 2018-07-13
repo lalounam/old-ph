@@ -18,7 +18,7 @@ CREATE TABLE customer(
 	FOREIGN KEY (id_status) REFERENCES status(id_status) ON DELETE CASCADE ON UPDATE CASCADE 
 )ENGINE = MyISAM;
 
-INSERT INTO customer (name) VALUES ('Eduardo Mendoza Aguilar');
+INSERT INTO customer (name) VALUES ('Freddy Mercury');
 
 CREATE TABLE email(
 	id_customer BIGINT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE email(
 	FOREIGN KEY (id_customer) REFERENCES customer(id_customer) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE = MyISAM;
 
-INSERT INTO email VALUES (1,'eduardomendozamx@gmail.com');
+INSERT INTO email VALUES (1,'queen@gmail.com');
 
 CREATE TABLE phone(
 	id_customer BIGINT NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE phone(
 	FOREIGN KEY (id_customer) REFERENCES customer(id_customer) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE = MyISAM;
 
-INSERT INTO phone VALUES (1,'+52 5527567675');
+INSERT INTO phone VALUES (1,'+52 5589985665');
 
 CREATE TABLE address(
 	id_customer BIGINT NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE address(
 	FOREIGN KEY (id_customer) REFERENCES customer(id_customer) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE = MyISAM;
 
-INSERT INTO address VALUES (1,'St Real de los reyes D4, District Coyoacan, 04330 CDMX, MEXICO');
+INSERT INTO address VALUES (1,'Innuendo St., District Mama Mia, 566 Mama Mia, LET ME GO');
 
 CREATE TABLE note(
 	id_note BIGINT NOT NULL AUTO_INCREMENT,
